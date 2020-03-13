@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		329D0953241A4BE800B4B9E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329D0951241A4BE800B4B9E9 /* Main.storyboard */; };
 		329D0955241A4BEC00B4B9E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 329D0954241A4BEC00B4B9E9 /* Assets.xcassets */; };
 		329D0958241A4BEC00B4B9E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 329D0956241A4BEC00B4B9E9 /* LaunchScreen.storyboard */; };
+		329D0960241A4CED00B4B9E9 /* UTI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329D095F241A4CED00B4B9E9 /* UTI.swift */; };
+		329D0962241A4CF700B4B9E9 /* FileSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329D0961241A4CF700B4B9E9 /* FileSystemManager.swift */; };
+		329D0964241A4F0B00B4B9E9 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329D0963241A4F0B00B4B9E9 /* ContactsViewController.swift */; };
+		329D0967241A50CF00B4B9E9 /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = 329D0966241A50CF00B4B9E9 /* CSV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		329D0954241A4BEC00B4B9E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		329D0957241A4BEC00B4B9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		329D0959241A4BEC00B4B9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		329D095F241A4CED00B4B9E9 /* UTI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTI.swift; sourceTree = "<group>"; };
+		329D0961241A4CF700B4B9E9 /* FileSystemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemManager.swift; sourceTree = "<group>"; };
+		329D0963241A4F0B00B4B9E9 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329D0967241A50CF00B4B9E9 /* CSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,9 @@
 				329D094B241A4BE800B4B9E9 /* AppDelegate.swift */,
 				329D094D241A4BE800B4B9E9 /* SceneDelegate.swift */,
 				329D094F241A4BE800B4B9E9 /* ViewController.swift */,
+				329D0963241A4F0B00B4B9E9 /* ContactsViewController.swift */,
+				329D095F241A4CED00B4B9E9 /* UTI.swift */,
+				329D0961241A4CF700B4B9E9 /* FileSystemManager.swift */,
 				329D0951241A4BE800B4B9E9 /* Main.storyboard */,
 				329D0954241A4BEC00B4B9E9 /* Assets.xcassets */,
 				329D0956241A4BEC00B4B9E9 /* LaunchScreen.storyboard */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = "Sheet Contacts";
+			packageProductDependencies = (
+				329D0966241A50CF00B4B9E9 /* CSV */,
+			);
 			productName = "Sheet Contacts";
 			productReference = 329D0948241A4BE800B4B9E9 /* Sheet Contacts.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 329D093F241A4BE800B4B9E9;
+			packageReferences = (
+				329D0965241A50CF00B4B9E9 /* XCRemoteSwiftPackageReference "CSV.swift" */,
+			);
 			productRefGroup = 329D0949241A4BE800B4B9E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329D0962241A4CF700B4B9E9 /* FileSystemManager.swift in Sources */,
 				329D0950241A4BE800B4B9E9 /* ViewController.swift in Sources */,
 				329D094C241A4BE800B4B9E9 /* AppDelegate.swift in Sources */,
+				329D0960241A4CED00B4B9E9 /* UTI.swift in Sources */,
 				329D094E241A4BE800B4B9E9 /* SceneDelegate.swift in Sources */,
+				329D0964241A4F0B00B4B9E9 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		329D0965241A50CF00B4B9E9 /* XCRemoteSwiftPackageReference "CSV.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yaslab/CSV.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		329D0966241A50CF00B4B9E9 /* CSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329D0965241A50CF00B4B9E9 /* XCRemoteSwiftPackageReference "CSV.swift" */;
+			productName = CSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 329D0940241A4BE800B4B9E9 /* Project object */;
 }
