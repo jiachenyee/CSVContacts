@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		329D0948241A4BE800B4B9E9 /* Sheet Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sheet Contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		329D0948241A4BE800B4B9E9 /* CSV Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSV Contacts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		329D094B241A4BE800B4B9E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		329D094D241A4BE800B4B9E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		329D094F241A4BE800B4B9E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		329D0949241A4BE800B4B9E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				329D0948241A4BE800B4B9E9 /* Sheet Contacts.app */,
+				329D0948241A4BE800B4B9E9 /* CSV Contacts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +98,7 @@
 				329D0966241A50CF00B4B9E9 /* CSV */,
 			);
 			productName = "Sheet Contacts";
-			productReference = 329D0948241A4BE800B4B9E9 /* Sheet Contacts.app */;
+			productReference = 329D0948241A4BE800B4B9E9 /* CSV Contacts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -311,8 +311,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jiachen.Sheet-Contacts";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "jiachen.CSV-Contacts";
+				PRODUCT_NAME = "CSV Contacts";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,8 +329,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jiachen.Sheet-Contacts";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "jiachen.CSV-Contacts";
+				PRODUCT_NAME = "CSV Contacts";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
