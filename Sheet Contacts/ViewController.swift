@@ -28,11 +28,13 @@ class ViewController: UIViewController, UIDocumentPickerDelegate {
         
         var documentName = url.lastPathComponent
         documentName.removeLast(url.pathExtension.count + 1)
-        
+        url.startAccessingSecurityScopedResource()
         if url.pathExtension == "csv" {
             do {
                 
                 importedContent = try String(contentsOf: url)
+                
+                url.stopAccessingSecurityScopedResource()
                 
                 performSegue(withIdentifier: "contacts", sender: nil)
             } catch {
@@ -40,6 +42,8 @@ class ViewController: UIViewController, UIDocumentPickerDelegate {
                 let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
 
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                
+                url.stopAccessingSecurityScopedResource()
                 
                 self.present(alert, animated: true, completion: nil)
             }
