@@ -35,7 +35,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uc0-q3-a0I" secondAttribute="trailing" constant="20" id="46Z-hC-VSN"/>
                             <constraint firstItem="uc0-q3-a0I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TR9-ru-X17"/>
                             <constraint firstItem="WHi-8w-c3m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="XHC-FR-4pw"/>
-                            <constraint firstItem="uc0-q3-a0I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="isQ-Zj-sKZ"/>
                             <constraint firstItem="uc0-q3-a0I" firstAttribute="top" secondItem="WHi-8w-c3m" secondAttribute="bottom" constant="20" id="mxz-2Z-Ufu"/>
                             <constraint firstItem="uc0-q3-a0I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qjG-bi-jZO"/>
                             <constraint firstItem="WHi-8w-c3m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ry1-Xh-xDm"/>
@@ -55,7 +54,7 @@
             <objects>
                 <viewController id="8Cd-du-9id" customClass="ContactsViewController" customModule="CSV_Contacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kaV-fu-JEu">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="560"/>
+                        <rect key="frame" x="0.0" y="0.0" width="720" height="560"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Zh-Gs-fj7">
@@ -70,14 +69,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qUQ-ju-toB">
-                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="12" width="35" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Czq-0f-xTN">
-                                                    <rect key="frame" x="653" y="12" width="44" height="20.5"/>
+                                                    <rect key="frame" x="651.5" y="12" width="45.5" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>

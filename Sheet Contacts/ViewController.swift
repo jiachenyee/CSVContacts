@@ -28,7 +28,7 @@ class ViewController: UIViewController, UIDocumentPickerDelegate {
         
         var documentName = url.lastPathComponent
         documentName.removeLast(url.pathExtension.count + 1)
-        url.startAccessingSecurityScopedResource()
+        _ = url.startAccessingSecurityScopedResource()
         if url.pathExtension == "csv" {
             do {
                 
