@@ -147,11 +147,6 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
             rowCount += 1
         }
         
-    }
-    @IBAction func saveToContactsButtonPressed(_ sender: Any) {
-        
-        saveToContacts()
-        
         let alert = UIAlertController(title: "Task Complete", message: "Saved to Contacts", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
             self.dismiss(animated: true)
@@ -159,7 +154,14 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
         
         self.present(alert, animated: true, completion: nil)
     }
+    @IBAction func saveToContactsButtonPressed(_ sender: Any) {
+        
+        saveToContacts()
+    }
     
+    @IBAction func dismissButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return csv.headerRow?.count ?? 0
     }
@@ -215,6 +217,12 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        let cell = tableView.cellForRow(at: indexPath)
+        
+        alert.popoverPresentationController?.sourceRect = cell!.frame
+        alert.popoverPresentationController?.sourceView = cell
+        alert.popoverPresentationController?.permittedArrowDirections = .up
         
         self.present(alert, animated: true, completion: nil)
     }
